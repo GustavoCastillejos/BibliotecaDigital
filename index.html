@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Biblioteca Digital - Hack4edu</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+          <a href="#"  class="nav__logo">
+            <i class="ri-book-3-line"></i>
+          </a>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">
+                  <i class="ri-home-line"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#featured" class="nav__link">
+                  <i class="ri-book-line"></i>
+                  <span>Nosotros</span>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#discount" class="nav__link">
+                  <i class="ri-price-tag-3-line"></i>
+                  <span>Precios</span>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="new" class="nav__link">
+                  <i class="ri-bookmark-line"></i>
+                  <span>Libros</span>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#testimonial" class="nav__link">
+                  <i class="ri-chat-1-line"></i>
+                  <span>Opiniones</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__actions">
+            <i class="ri-search-line search-button" id="search-button"></i>
+
+            <i class="ri-user-line login-button" id="login-button"></i>
+
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+        <form action="" class="search__form">
+          <li class="ri-search-line search__icon"></li>
+          <input type="search" placeholder="¿Qué estas buscando?" class="search__input">
+        </form> 
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+         <h3 class="login__tittle">Iniciar Sesion</h3>
+   
+         <div class="login__group grid ">
+           <div>
+             <label for="login-email" class="login__label">Email</label>
+             <input type="email" placeholder="Correo Electronico" id="login-email" class="login__input">
+           </div>
+   
+           <div>
+             <label for="login-password" class="login__label">Contraseña</label>
+             <input type="password" placeholder="Contraseña" id="login-password" class="login__input">
+           </div>
+         </div>
+   
+         <div>
+           <span class="login__signup">
+             ¿No tienes cuenta? <a href="#">Registrate</a>
+           </span>
+   
+           <a href="#" class="login__forgot">Olvidaste tu contraseña</a>
+   
+           <button type="submit" class="login__button button">Iniciar Sesión</button>
+         </div>
+        </form>
+   
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+   
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+           <div class="home__container container grid">
+            <div class="home__data">
+              <h1 class="home__title">
+                Buscar & <br>
+                Selección de libros
+              </h1>
+
+              <p class="home__description">
+                asgjoiasgnuasinudiasguasn
+              </p>
+
+              <a href="" class="button">Explorar ahora</a>
+            </div>
+
+            <div class="home__images">
+              <div class="home__swiper swiper">
+                <div class="swiper-wrapper">
+                  <article class="home__article swiper-slide">
+                    <img src="assets/img/home-book-1.png" alt="image" class="home__img">
+                  </article>
+
+                  <article class="home__article swiper-slide">
+                    <img src="assets/img/home-book-2.png" alt="image" class="home__img">
+                  </article>
+
+                  <article class="home__article swiper-slide">
+                    <img src="assets/img/home-book-3.png" alt="image" class="home__img">
+                  </article>
+
+                  <article class="home__article swiper-slide">
+                    <img src="assets/img/home-book-4.png" alt="image" class="home__img">
+                  </article>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
+   
+        <!--==================== SERVICES ====================-->
+        <section class="services section">
+           <div class="services__container container grid">
+             <article class="services__card">
+               <i class="ri-truck-line"></i>
+               <h3 class="services__title">Sin necesidad de transporte</h3>
+               <p class="services__description">Esta plataforma es 100% virtual </p>
+               <p class="services__description">Por lo tanto el usuario nunca integrará su dirección</p>
+             </article>
+   
+             <article class="services__card">
+               <i class="ri-lock-line"></i>
+               <h3 class="services__title">Seguridad Total</h3>
+               <p class="services__description">Esta plataforma tiene principios de ciberseguridad.</p>
+             </article>
+   
+             <article class="services__card">
+               <i class="ri-customer-service-line"></i>
+               <h3 class="services__title">Podcasts</h3>
+               <p class="services__description">Se integrará funciones para escuchar podcast de spotify</p>
+             </article>
+           </div>
+        </section>
+   
+         <!--==================== FEATURED ====================-->
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+              Libros recomendados
+            </h2>
+
+            <div class="featured__container container">
+              <div class="featured__swiper">
+                <div class="swiper-wrapper">
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-1.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-1.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-2.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+                   
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-3.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+                  
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-4.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+                  
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-5.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+                 
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-6.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+                  
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-7.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+                 
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-8.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+                  
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+
+                  <article class="featured__card swiper-slide">
+                    <img src="assets/img/book-9.png" alt="" class="featured__img">
+
+                    <h2 class="featured__title">Libro Recomendado</h2>
+                
+
+                    <button class="button">Leer ahora</button>
+
+                    <div class="featured__actions">
+                      <button><i class="ri-search-line"></i></button>
+                      <button><i class="ri-heart-line"></i></button>
+                      <button><i class="ri-eye-line"></i></button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+         </section>
+
+         <!--==================== DISCOUNT ====================-->
+         <section class="discount section" id="discount">
+          <div class="discount__container container grid">
+            <div class="discount__data">
+              <h2 class="discount__title section__title">
+                Libro gratis
+              </h2>
+  
+              <p class="discount_description">
+                La plataforma cuenta con libros gratis para todas las personas que cuentan con correo electronico institucional o un correo electronico de una organización
+              </p>
+  
+              <a href="" class="button">Leer ahora</a>
+            </div>
+  
+            <div class="discount__images">
+              <img src="assets/img/discount-book-1.png" alt="image" class="discount__img-1">
+              <img src="assets/img/discount-book-2.png" alt="image" class="discount__img-2"> 
+            </div>
+          </div>
+       </section>
+         <!--==================== NEW BOOKS ====================-->
+         <section class="new section" id="new">
+            
+         </section>
+
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+          <div class="join__container">
+            <img src="assets/img/join-bg.jpg" alt="image" class="join__bg">
+  
+            <div class="join__data container grid">
+              <h2 class="join__title section__title">
+                Unete a nosotros para recibir <br> las ultimas actualizaciones
+              </h2>
+  
+              <form action="" class="join__form">
+                <input type="email" placeholder="Escribe tu correo" class="join__input">
+                <button type="submit" class="join__button button">Unirse</button>
+              </form>
+            </div>
+          </div>
+       </section>
+  
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+          <h2 class="section__title">
+            Opiniones de clientes
+          </h2>
+  
+          <div class="testimonial__container container">
+            <div class="testimonial__swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="testimonial__card swiper-slide">
+                  <img src="assets/img/testimonial-perfil-1.png" alt="image" class="testimonial__img">
+  
+                  <h2 class="testimonial__title">Nombre 1</h2>
+                  <p class="testimonial__description">
+                    Las mejores plataformas para leer libros.
+                  </p>
+  
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                  </div>
+                </article>
+  
+                <article class="testimonial__card swiper-slide">
+                  <img src="assets/img/testimonial-perfil-2.png" alt="image" class="testimonial__img">
+  
+                  <h2 class="testimonial__title">Nombre 1</h2>
+                  <p class="testimonial__description">
+                    Las mejores plataformas para leer libros.
+                  </p>
+  
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                  </div>
+                </article>
+  
+                <article class="testimonial__card swiper-slide">
+                  <img src="assets/img/testimonial-perfil-3.png" alt="image" class="testimonial__img">
+  
+                  <h2 class="testimonial__title">Nombre 1</h2>
+                  <p class="testimonial__description">
+                    Las mejores plataformas para leer libros.
+                  </p>
+  
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                  </div>
+                </article>
+  
+                <article class="testimonial__card swiper-slide">
+                  <img src="assets/img/testimonial-perfil-4.png" alt="image" class="testimonial__img">
+  
+                  <h2 class="testimonial__title">Nombre 1</h2>
+                  <p class="testimonial__description">
+                    Las mejores plataformas para leer libros.
+                  </p>
+  
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+       </section>
+    </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
